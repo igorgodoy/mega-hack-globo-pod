@@ -1,0 +1,16 @@
+{
+	"type": "postgres",
+	"host": "localhost",
+	"username": "postgres",
+	"password": "mysecretpassword",
+	"database": "globo_app",
+	"entities": [
+	    "./src/models/*.ts"
+	],
+  "migrations": [
+    "./src/database/migrations/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
+}
