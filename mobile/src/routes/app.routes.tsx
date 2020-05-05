@@ -9,10 +9,7 @@ import MovieMain from '../pages/MovieMain';
 const App = createStackNavigator();
 
 const AppRoutes: React.FC = () => (
-  <App.Navigator
-    screenOptions={{ headerShown: false }}
-    initialRouteName="Dashboard"
-  >
+  <App.Navigator screenOptions={{ headerShown: false }}>
     <App.Screen name="Interests" component={Interests} />
     <App.Screen name="Dashboard" component={Dashboard} />
     <App.Screen name="LiveProg" component={LiveProg} />
